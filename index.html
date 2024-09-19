@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Cloud Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Word Cloud Generator</h1>
+  <textarea id="wordsInput" rows="5" cols="50" placeholder="Enter words separated by spaces or commas..."></textarea>
+  <br>
+  <input type="file" id="fileInput" accept=".csv,.json">
+  <br><br>
+  <button onclick="generateWordCloud()">Generate Word Cloud</button>
+  <br><br>
+  <canvas id="wordCloudCanvas" width="600" height="400"></canvas>
+
+  <!-- Include the wordcloud2.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.6/wordcloud2.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
